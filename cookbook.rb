@@ -1,8 +1,14 @@
 class Cookbook
 	attr_accessor :title
+	attr_reader :recipes
 
 	def initialize(title)
 		@title = title
+		@recipes = []
+	end
+
+	def add_recipe(new_recipe)
+		recipes << new_recipe
 	end
 end
 
