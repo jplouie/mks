@@ -33,4 +33,8 @@ class Recipe
 		@ingredients = ingredients
 		@steps = steps
 	end
+
+	def print_recipe
+		puts "#{title}. Ingredients needed: #{ingredients.join(", ")}. Steps: #{steps.join(", ")}."
+	end
 end
