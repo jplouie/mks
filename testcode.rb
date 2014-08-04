@@ -27,3 +27,8 @@ mex_cuisine.recipe_titles # Veggie Burrito
 mex_cuisine.recipe_ingredients # These are the ingredients for Veggie Burrito: ["tortilla", "bean"]
 
 burrito.print_recipe
+
+quesadilla = Recipe.new("Cheese Quesadilla", ["tortilla", "cheese"], ["heat tortilla", "spread cheese", "fold in half"])
+mex_cuisine.add_recipe(quesadilla)
+mex_cuisine.recipe_titles
+mex_cuisine.recipe_ingredients
