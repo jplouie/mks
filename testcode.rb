@@ -32,3 +32,5 @@ quesadilla = Recipe.new("Cheese Quesadilla", ["tortilla", "cheese"], ["heat tort
 mex_cuisine.add_recipe(quesadilla)
 mex_cuisine.recipe_titles
 mex_cuisine.recipe_ingredients
+
+mex_cuisine.print_cookbook
