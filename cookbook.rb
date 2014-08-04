@@ -9,6 +9,7 @@ class Cookbook
 
 	def add_recipe(new_recipe)
 		recipes << new_recipe
+		puts "Added a recipe to the collection: #{new_recipe.title}"
 	end
 end
 
