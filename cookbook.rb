@@ -28,7 +28,10 @@ class Cookbook
 		recipes.each do |recipe|
 			puts "* * * #{recipe.title} * * *"
 			puts "Ingredients: #{recipe.ingredients.join(", ")}"
-			puts "Steps: #{recipe.steps.join(". ")}"
+			puts "Steps:"
+			recipe.steps.length.times do |number|
+				puts "#{number + 1}. #{recipe.steps[number]}"
+			end
 		end
 	end
 end
@@ -43,6 +46,10 @@ class Recipe
 	end
 
 	def print_recipe
-		puts "#{title}. Ingredients needed: #{ingredients.join(", ")}. Steps: #{steps.join(", ")}."
+		puts "#{title}. Ingredients needed: #{ingredients.join(", ")}."
+		puts "Steps:"
+		steps.length.times do |number|
+			puts "#{number + 1}. #{steps[number]}"
+		end
 	end
 end
