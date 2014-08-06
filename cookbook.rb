@@ -46,7 +46,7 @@ class Recipe
 	end
 
 	def print_recipe
-		puts "#{title}. Ingredients needed: #{ingredients.join(", ")}."
+		puts "#{@title}. Ingredients needed: #{ingredients.join(", ")}."
 		puts "Steps:"
 		steps.length.times do |number|
 			puts "#{number + 1}. #{steps[number]}"
